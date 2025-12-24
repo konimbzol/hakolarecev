@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>דילים שווים לרכב</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1851249335414047');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1851249335414047&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+body {
+margin:0;
+font-family: Arial, sans-serif;
+background: url('background.jpg') no-repeat center center fixed;
+background-size: cover;
+color:#fff;
+text-align:center;
+}
+.overlay {
+background: rgba(0,0,0,0.6);
+min-height:100vh;
+padding:40px 20px;
+}
+h1 {font-size:2.2em; margin-bottom:10px;}
+p {font-size:1.1em; margin-bottom:30px;}
+.cta {
+background:#25D366;
+color:#fff;
+font-size:1.4em;
+padding:18px 40px;
+border-radius:50px;
+text-decoration:none;
+display:inline-block;
+margin-bottom:40px;
+}
+.reviews {
+max-width:800px;
+margin:0 auto;
+}
+.review {
+display:none;
+font-size:1.05em;
+}
+.review.active {display:block;}
+</style>
+
+<script>
+let idx=0;
+function rotate(){
+let r=document.querySelectorAll('.review');
+r.forEach(x=>x.classList.remove('active'));
+r[idx].classList.add('active');
+idx=(idx+1)%r.length;
+}
+setInterval(rotate,3000);
+window.onload=rotate;
+</script>
+
+</head>
+<body>
+<div class="overlay">
+<h1>🔥 קבוצת הדילים הכי שווים למוצרים לרכב</h1>
+<p>מבצעים, מציאות ואביזרים לרכב במחירים שלא רואים בחנויות 🚗</p>
+
+<a class="cta" href="https://chat.whatsapp.com/LiPIedjOcT690KrULXBDCZ">הצטרפו בחינם</a>
+
+<h2>מה חברי הקבוצה אומרים</h2>
+<div class="reviews">
+<div class="review">⭐ "מצאתי אביזרים לרכב בחצי מחיר"</div>
+<div class="review">⭐ "קבוצה ממכרת, כל יום דילים חדשים"</div>
+<div class="review">⭐ "שירות מעולה ומבצעים אמיתיים"</div>
+<div class="review">⭐ "הזמנתי כבר כמה פעמים, שווה!"</div>
+<div class="review">⭐ "הדילים הכי טובים שראיתי"</div>
+<div class="review">⭐ "לא מפסיק לעקוב, חוסך מלא כסף"</div>
+<div class="review">⭐ "כל מי שיש לו רכב חייב להיות כאן"</div>
+</div>
+</div>
+</body>
+</html>
